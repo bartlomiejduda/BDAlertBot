@@ -11,7 +11,7 @@ from src.logger import get_logger
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext, MessageHandler, Filters
 
-VERSION_NUM = "v0.2.2"
+VERSION_NUM = "v0.2.3"
 
 logger = get_logger("main")
 
