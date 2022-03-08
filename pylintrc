@@ -1,0 +1,9 @@
+[MASTER]
+py-version=3.7
+jobs=8
+
+[MESSAGES CONTROL]
+
+
+[FORMAT]
+max-line-length=120
