@@ -1,5 +1,11 @@
 # BDAlertBot
-Telegram bot for sending customized alrts to users.
+Telegram bot for sending customized alerts to users.
+
+Contact **[@bduda_admin_bot](t.me/bduda_admin_bot)** on Telegram to see this bot in action.
+
+Type **/help** in message window to get a list of commands.
+
+
 
 <img src="src\data\img\usage.gif">
 
@@ -13,4 +19,12 @@ Telegram bot for sending customized alrts to users.
    - .\venv\Scripts\activate.bat
 4. Install all libraries from requirements.txt
    - pip3 install -r requirements.txt
-5. Run the src\main.py file
+5. Set all required environment variables (see env.py for more info)
+6. Run the src\main.py file
+
+
+# Deploying on Heroku
+
+This app is designed to be deployed on **[heroku.com](https://heroku.com)** cloud platform.
+
+// TODO

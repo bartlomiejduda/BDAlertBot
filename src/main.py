@@ -11,32 +11,34 @@ from src.logger import get_logger
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext, MessageHandler, Filters
 
-VERSION_NUM = "v0.2.4"
+VERSION_NUM = "v0.2.5"
 
 logger = get_logger("main")
 
 
-# Define a few command handlers. These usually take the two arguments update and
-# context. Error handlers also receive the raised TelegramError object in error.
-# Best practice would be to replace context with an underscore,
-# since context is an unused local variable.
-# This being an example and not having context present confusing beginners,
-# we decided to have it present as context.
-
 def start(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text(f'Hi! I\'m BDAlertBot {VERSION_NUM}\n'
-                              'Type /help for more info.')
+    update.message.reply_text(f'Hi! I\'m BDAlertBot {VERSION_NUM}.\n'
+                              'I\'ve been created by Bartlomiej Duda'
+                              'Type /help to see a list of commands.')
 
 
 def help_reply(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('Bot usage:\n'
-                              '/start - Welcome message\n'
-                              '/help - this message\n'
-                              '......')
+                              '/start - display welcome message\n'
+                              '/help - display this help message\n'
+                              '/timer_s <seconds> - set timer for specified amount of seconds from now\n'
+                              '/timer_m <minutes> - set timer for specified amount of minutes from now\n'
+                              '/timer_h <hours> - - set timer for specified amount of hours from now\n'
+                              '/timer_g <hours> <minutes> <seconds> - set generic timer\n'
+                              '/timer_d <hour>:<minutes> - to set alert for every day at the same hour\n'
+                              '\n'
+                              'Other methods:\n'
+                              '/lucky <start> <length> - your lucky number!\n'
+                              '/lr - left or right?')
 
 
 def generic_reply(update, context):
-    update.message.reply_text('Sorry. I don\'t understand this command. Type /help for more info.')
+    update.message.reply_text('Sorry. I don\'t understand this command. Type /start or /help for more info.')
 
 
 def alarm(context: CallbackContext) -> None:
