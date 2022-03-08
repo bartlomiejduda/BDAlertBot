@@ -2,6 +2,5 @@ black==22.1.0
 mypy==0.931
 pylint==2.12.2
 pytest==7.0.1
-cx-Freeze==6.10
 requests==2.27.1
 python-telegram-bot==13.11
