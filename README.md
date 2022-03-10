@@ -1,7 +1,7 @@
 # BDAlertBot
 Telegram bot for sending customized alerts to users.
 
-Contact **[@bduda_admin_bot](t.me/bduda_admin_bot)** on Telegram to see this bot in action.
+Contact **[@bduda_admin_bot](https://t.me/bduda_admin_bot)** on Telegram to see this bot in action.
 
 Type **/help** in message window to get a list of commands.
 

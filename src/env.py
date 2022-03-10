@@ -12,7 +12,7 @@ def get_bot_env() -> str:
 
 
 def get_bot_port() -> int:
-    port = int(os.environ.get('PORT'))  # Port is given by Heroku
+    port = int(os.environ.get("PORT"))  # Port is given by Heroku
     return port
 
 
